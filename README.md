@@ -1,4 +1,4 @@
-# AI Assignment – Content Framework Prototype
+# Content Framework Prototype
 
 ## Overview
 This repository contains a **prototype implementation of a content framework** built as part of an AI assignment. The primary objective of this project is to demonstrate **system design, reasoning flow, and implementation approach** for generating structured content outputs using a Large Language Model (LLM).
