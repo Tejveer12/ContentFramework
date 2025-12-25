@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     json_to_excel(
         sitemap_json=final_sitemap,
-        output_path="Certified_it.xlsx"
+        output_path="Certified_it_2.xlsx"
     )
 
     print("\n📤 Excel exported successfully ✅")

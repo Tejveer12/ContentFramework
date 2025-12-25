@@ -5,7 +5,7 @@ from agents.extractor_agent import extract_from_chunk
 from agents.progressive_sitemap_agent import update_sitemap
 from agents.verifier_agent import verify_sitemap
 from agents.evaluator_agent import evaluate_sitemap
-from agents.updation_agent import update_sitemap_from_evaluation
+from agents.updation_agent import update_sitemap_from_evaluation, update_sitemap_from_user
 
 from utils.file_loader import read_file_text
 
@@ -149,7 +149,7 @@ async def run_pipeline(input_folder: str):
             print("✅ Finalizing sitemap.")
             break
 
-        sitemap = await update_sitemap_from_evaluation(sitemap, user_feedback)
+        sitemap = await update_sitemap_from_user(sitemap, user_feedback)
         print("🔄 Sitemap updated.")
 
     return sitemap

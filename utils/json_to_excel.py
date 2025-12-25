@@ -37,8 +37,8 @@ def format_sections(sections: list[str] | None):
 
 def infer_content_status(description: str | None):
     if description:
-        return "✒️ Copy", "✅ Complete"
-    return "🙅🏻‍♀️ N/A", "🙅🏻‍♀️ N/A"
+        return "", ""
+    return "", ""
 
 
 def add_row(
