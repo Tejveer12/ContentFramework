@@ -82,7 +82,6 @@ async def run_pipeline(input_folder: str):
 
     sitemap = await update_sitemap(sitemap, merged_facts)
     print("\n🧩 Initial Sitemap:\n", json.dumps(sitemap, indent=2))
-    breakpoint()
 
     # ----------------------------------
     # Step 4: Verify structure
