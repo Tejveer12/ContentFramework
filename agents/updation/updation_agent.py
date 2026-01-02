@@ -1,6 +1,6 @@
 import aiohttp
 import json
-from prompts.updation_prompt import UPDATION_SYSTEM_PROMPT, USER_UPDATION_SYSTEM_PROMPT
+from updation_prompt import UPDATION_SYSTEM_PROMPT, USER_UPDATION_SYSTEM_PROMPT
 from config import MODEL_NAME, LOCAL_API_URL
 
 
@@ -84,7 +84,7 @@ TASK:
         "temperature": 0.1,
         "top_p": 0.85,
         "max_tokens": 3000,
-        "stop": ["</s>", "```"],
+        "stop": ["</s>"],
         "stream": False
     }
 

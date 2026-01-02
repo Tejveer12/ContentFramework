@@ -1,21 +1,34 @@
+# --- FILE: agents/evaluation/evaluator_agent.py (CORRECTED) ---
+
 import aiohttp
 import json
 
 from config import MODEL_NAME, LOCAL_API_URL
-from prompts.evaluator_prompt import EVALUATOR_SYSTEM_PROMPT
+from agents.evaluation.evaluator_prompt import EVALUATOR_SYSTEM_PROMPT
 
 
-async def evaluate_sitemap(sitemap: dict, reference_text: str) -> dict:
+async def evaluate_sitemap(
+        generated_sitemap: dict,
+        expected_sitemap: dict,
+        reference_text: str
+) -> dict:
+    # ... (user_prompt construction remains the same, using generated_sitemap, expected_sitemap)
     user_prompt = f"""
-REFERENCE INPUT DOCUMENTS:
+REFERENCE INPUT DOCUMENTS (Context for hallucination check):
 {reference_text}
 
-CURRENT SITEMAP:
-{json.dumps(sitemap, indent=2)}
+---
+GOLD STANDARD (EXPECTED SITEMAP):
+{json.dumps(expected_sitemap, indent=2)}
+
+CURRENT SITEMAP (GENERATED OUTPUT):
+{json.dumps(generated_sitemap, indent=2)}
 
 TASK:
-- Evaluate sitemap quality against the reference documents
-- Identify gaps, missing sections, or unsupported content
+- Compare the CURRENT SITEMAP against the GOLD STANDARD.
+- Use the REFERENCE INPUT DOCUMENTS only to confirm content existence.
+- Evaluate the CURRENT SITEMAP quality relative to the GOLD STANDARD.
+- Identify *all* gaps, missing sections, structural differences, or unsupported content.
 - Do NOT modify the sitemap
 """
 
@@ -28,7 +41,7 @@ TASK:
         "temperature": 0.1,
         "top_p": 0.8,
         "max_tokens": 1200,
-        "stop": ["</s>", "```"],
+        "stop": ["</s>"],
         "stream": False
     }
 
@@ -40,12 +53,14 @@ TASK:
             data = await resp.json()
             content = data["choices"][0]["message"]["content"].strip()
 
+    # --- JSON Parsing and Validation (Ensure 'result' is defined here) ---
     try:
+        # 'result' is defined here
         result = json.loads(content)
     except Exception:
         raise ValueError(f"Evaluator returned invalid JSON:\n{content}")
 
-    # Hard validation
+    # Hard validation (uses 'result')
     if "score" not in result or "reasons" not in result:
         raise ValueError("Evaluator response must contain 'score' and 'reasons'")
 
@@ -58,5 +73,4 @@ TASK:
     if not isinstance(result["reasons"], list):
         raise ValueError("Reasons must be a list")
 
-    return result
-
+    return result  # 'result' is now defined in the function scope

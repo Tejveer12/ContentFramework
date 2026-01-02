@@ -1,10 +1,10 @@
 import aiohttp
 import json
-from prompts.sitemap_system_prompt import SYSTEM_PROMPT
-from prompts.verifier_prompt import VERIFIER_SYSTEM_PROMPT
+from agents.sitemap.sitemap_system_prompt import SYSTEM_PROMPT
+from agents.sitemap.verifier_prompt import VERIFIER_SYSTEM_PROMPT
 from config import MODEL_NAME, LOCAL_API_URL
 
-async def verify_sitemap(sitemap: dict) -> dict:
+async def verify_sitemap(sitemap):
     user_prompt = f"""
 SITEMAP JSON TO VERIFY:
 {json.dumps(sitemap, indent=2)}
@@ -25,7 +25,7 @@ TASK:
         "temperature": 0.05,
         "top_p": 0.7,
         "max_tokens": 3500,
-        "stop": ["</s>", "```"],
+        "stop": ["</s>"],
         "stream": False
     }
 

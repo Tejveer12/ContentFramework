@@ -1,0 +1,378 @@
+[
+  {
+    "epoch": 1,
+    "avg_score": 0.3
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.3
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.3
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.4
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 4,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 5,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 6,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 7,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 8,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.4
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.4
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 4,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 5,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 6,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 7,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 8,
+    "avg_score": 0.3
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 4,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 5,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.3
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.7
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 4,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 5,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 6,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 7,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.7
+  },
+  {
+    "epoch": 4,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 5,
+    "avg_score": 0.7
+  },
+  {
+    "epoch": 6,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 7,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 8,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.3
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.5
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.3
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.3
+  },
+  {
+    "epoch": 4,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.3
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.4
+  },
+  {
+    "epoch": 4,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 5,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 6,
+    "avg_score": 0.7
+  },
+  {
+    "epoch": 7,
+    "avg_score": 0.9
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 4,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 5,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 6,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 7,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 8,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 9,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 10,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.7
+  },
+  {
+    "epoch": 4,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 5,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 6,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 7,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 8,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 9,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 4,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 5,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 6,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 4,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 5,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 6,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 7,
+    "avg_score": 0.3
+  },
+  {
+    "epoch": 8,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 9,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 1,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 2,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 3,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 4,
+    "avg_score": 0.6
+  },
+  {
+    "epoch": 5,
+    "avg_score": 0.3
+  }
+]

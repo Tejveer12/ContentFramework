@@ -1,0 +1,117 @@
+{
+  "general_rules": {
+  "extraction_rules": [
+    "Extract ONLY pages, collections, and navigation items explicitly defined in the GOLD STANDARD. Do not invent, infer, or hallucinate pages, collections, features, or sub-pages.",
+    "Primary collection pages (e.g., Men's, Women's, Youth, Accessories, Printers, Servers, Business Laptops, Age-based collections) must be extracted exactly as named in the GOLD STANDARD.",
+    "Do not create standalone collection pages for product types (e.g., Fleece, Knitwear, Athletic) unless explicitly defined as primary collections in the GOLD STANDARD.",
+    "Product types (e.g., Fleece, Knitwear, Athletic) must be treated as product attributes within collections, not as top-level navigation items.",
+    "Sub-collections such as Tops and Bottoms may only be created under collections if explicitly referenced in the GOLD STANDARD.",
+    "Do not extract granular sub-collections (e.g., Hats, Scarves, Bags, Belts) unless explicitly listed.",
+    "Extract all policy pages (Shipping, Refund, Privacy, Terms) only under the designated non-clickable footer item defined in the GOLD STANDARD.",
+    "Extract non-clickable navigation items (e.g., Shop, Shop by Age, Useful Links, Customer Support, Our Policies, Top Navigation & Utility Links) strictly as non-clickable items with only their explicitly defined sub-pages.",
+    "Do not extract unsupported pages or features (e.g., Product Quiz, Bubbi Box Builder, Baby Guides, Bubby Link) unless explicitly present in the GOLD STANDARD.",
+    "Extract Product Page as a reusable page template, not as a collection or utility page, and only where defined in the GOLD STANDARD."
+  ],
+
+  "structure_rules": [
+    "Header navigation must include only GOLD STANDARD-defined clickable main pages and collections.",
+    "Primary collections must appear in header navigation and be mirrored in footer sections only if the GOLD STANDARD explicitly requires mirroring.",
+    "Non-clickable navigation items must never be classified as main pages and must contain only explicitly defined sub-pages.",
+    "Footer sections must strictly mirror header collections only where the GOLD STANDARD mandates identical naming and structure.",
+    "Shop must be a non-clickable footer-only item unless otherwise specified in the GOLD STANDARD.",
+    "Shop by Age must be a non-clickable header and footer item with age-based collection landing pages as sub-pages.",
+    "Useful Links and Customer Support must be non-clickable items containing only GOLD STANDARD-approved sub-pages.",
+    "Policy pages must never appear as standalone footer or header items and must be nested correctly.",
+    "Collection pages must not contain sub-collections unless explicitly defined.",
+    "Product Page must not appear in footer or utility sections and must be defined once as a reusable template.",
+    "Trade-In, Blog, About, FAQs, Contact, and similar pages must be placed strictly according to GOLD STANDARD navigation placement."
+  ],
+
+  "content_rules": [
+    "All pages must strictly follow the GOLD STANDARD section definitions and page templates.",
+    "Home page must include Hero, Featured Collections, Brand Story, USPs, Testimonials, and Newsletter where defined.",
+    "Collection pages must include title, description, and product grid with filters if specified.",
+    "Tops and Bottoms sub-pages must be collection pages with product grids, not standalone product pages.",
+    "Age-based collection pages must include exact GOLD STANDARD sections (Hero, Trust Certification, Gender Variants, Product Grid with View Eye, CTA, Recommendations).",
+    "Product pages must include image gallery, title, price, options (size/color), quantity selector, add-to-cart CTA, and related product carousels.",
+    "Policy pages must contain clear, structured policy-specific content without expansion beyond the GOLD STANDARD.",
+    "Do not add descriptive content, sections, or features to pages not explicitly defined.",
+    "All navigation descriptions and page content must align with user intent and GOLD STANDARD wording.",
+    "Reusable templates (Product Page, Collection Page, Policy Page) must be consistent across the sitemap."
+  ]
+},
+  "client_specific_rules": {
+    "Example-1-BICKFORD USA": {
+      "extraction_rules": [
+        "Extract Men's, Women's, Youth, Accessories as primary collection pages with sub-pages for Tops and Bottoms only if explicitly referenced in input.",
+        "Include 'Shop' as a non-clickable footer item with links to Men's, Women's, Youth, Accessories only; do not create standalone Fleece, Knitwear, or Athletic collection pages.",
+        "Include 'Useful Links' in footer with nested links to About, Contact, FAQ as a non-clickable footer item.",
+        "Include 'Our Policies' in footer with nested pages: Shipping, Refund, Privacy, Terms & Conditions as a non-clickable footer item.",
+        "Do not extract Fleece, Knitwear, or Athletic as standalone collection pages unless explicitly stated in input and required by reference structure.",
+        "Do not extract or hallucinate accessory sub-collections such as Hats, Scarves, Bags, or Belts unless explicitly referenced in input.",
+        "Only create 'Tops' and 'Bottoms' as sub-pages under Men's, Women's, or Youth collections if explicitly referenced in input; do not treat them as standalone collection pages.",
+        "Extract Men's, Women's, Youth, and Accessories as top-level header navigation items with explicit sub-pages for Tops and Bottoms if referenced in input.",
+        "Tops and Bottoms must be extracted as sub-collection pages under Men's, Women's, and Youth, not as standalone product pages."
+      ],
+      "structure_rules": [
+        "Structure Men's, Women's, Youth, Accessories as header mega menu items with sub-pages for Tops and Bottoms only if explicitly referenced in input.",
+        "Each collection (e.g., Men's) must have sub-pages for Tops and Bottoms with product grids and descriptions only if explicitly listed in input.",
+        "The 'Shop' page must be non-clickable in footer only, not a clickable collection page with filters.",
+        "The 'Home' page must include Hero Banner, Featured Collections, Brand Story, USPs, Testimonials, Newsletter.",
+        "All policy pages must be nested under 'Our Policies' in footer as non-clickable items.",
+        "Do not create sub-collections (e.g., Tops, Bottoms) under Youth unless explicitly referenced in input.",
+        "Ensure 'Shop', 'Useful Links', and 'Our Policies' are non-clickable footer items and not placed in header or as main pages.",
+        "Sub-pages under Men's, Women's, and Youth must only exist if explicitly referenced in input; do not hallucinate sub-collections.",
+        "Do not create standalone 'Tops' or 'Bottoms' as collection pages; they must be sub-pages under Men's, Women's, or Youth collections only if explicitly referenced.",
+        "The 'Home' page must include a dedicated 'Brand Story' and 'USPs' section as key features; do not omit them.",
+        "All main pages (About, Contact, FAQ) must be placed only in the header, not in the footer or as standalone footer items.",
+        "Primary collection pages (Men's, Women's, Youth, Accessories) must be placed in the header as top-level navigation items with proper sub-pages for Tops and Bottoms if referenced.",
+        "Tops and Bottoms sub-pages must be structured as collection pages with product grids, not as standalone product pages with generic descriptions.",
+        "The 'Shop' footer item must not contain clickable collection links; it must only serve as a non-clickable navigation heading with sub-links to primary collections."
+      ],
+      "content_rules": [
+        "All product category pages must have a title and product grid with proper section descriptions.",
+        "Product pages must include image gallery, product title, price, size/color options, quantity selector, add-to-cart CTA, and related product carousels.",
+        "Home page must include all required sections as per gold standard.",
+        "Policy pages must have clear, descriptive content for each policy type.",
+        "Ensure 'Shop', 'Useful Links', and 'Our Policies' are strictly non-clickable footer items and not duplicated in header or as main pages.",
+        "Do not include Fleece, Knitwear, or Athletic as top-level collection pages in the sitemap.",
+        "Do not include accessory sub-collections such as Hats, Scarves, Bags, or Belts unless explicitly referenced in input.",
+        "Product pages must include full features: image gallery, size/color options, quantity selector, add-to-cart CTA, and 'You may also like' or 'Recently Viewed' carousels.",
+        "Main pages (About, Contact, FAQ) must have descriptive content and be placed exclusively in the header.",
+        "Primary collection pages (Men's, Women's, Youth, Accessories) must have clear descriptions and key features including collection title, description, and product grid.",
+        "Tops and Bottoms sub-pages under each collection must have clear descriptions and product grid sections with proper product listings.",
+        "Tops and Bottoms sub-pages must be explicitly defined as collection pages with product grids, not as product collections with generic product listings."
+      ]
+    },
+    "Example-2-BUBBI": {
+      "extraction_rules": [
+        "Extract 'Shop by Age' as a non-clickable navigation item in both header and footer with sub-pages for each age group (0-3, 3-6, 6-9, 9-12, 12-18, 18-24 months), strictly following the gold standard structure.",
+        "Extract 'Our Story', 'Why Bubbi', 'How It Works', and 'Support' as main header pages with full structural content as per gold standard.",
+        "Extract 'Useful Links' and 'Customer Support' as non-clickable footer navigation items with only sub-pages defined in the gold standard.",
+        "Do not extract 'Product Quiz' or 'Bubbi Box Builder' as main pages \u2014 they are not in the gold standard.",
+        "Do not extract 'Baby 0-3 Months Guide' or 'New Mom Resource Guide' as standalone content pages \u2014 they are not in the gold standard.",
+        "Extract 'FAQs' as a main header page with a list of frequently asked questions as defined in the gold standard.",
+        "Ensure 'Shop by Age' is not classified as a collection page but as a non-clickable navigation item with sub-pages that are collection landing pages."
+      ],
+      "structure_rules": [
+        "Place 'Our Story', 'Why Bubbi', 'How It Works', and 'Support' in the header navigation with proper section structure as per gold standard.",
+        "Place 'Shop by Age', 'Useful Links', and 'Customer Support' in both header and footer as non-clickable navigation items.",
+        "All age-based sub-pages must be collection landing pages with exact structure: hero, trust certification, gender variants, product grid with 'View Eye' pop-up, and CTA, including 'Bubbi Recommends' and 'Rich Text (Bubbi Trust Certification)' sections.",
+        "All policy pages (Shipping, Refund, Privacy, Terms) must be nested under 'Customer Support' in the footer as sub-pages, not as standalone entries.",
+        "The 'Useful Links' footer item must contain only sub-pages explicitly defined in the gold standard (e.g., 'Shop All Products', 'Our Story', 'Why Bubbi', 'How It Works', 'Contact'), and each must be correctly typed and structured as per header navigation.",
+        "The 'Customer Support' footer item must contain only policy sub-pages (Shipping, Refund, Privacy, Terms) and no additional features like 'Bubby Link'. Each must be clearly labeled as a 'Policy Page' with defined content sections.",
+        "The 'Shop by Age' navigation item must be clearly marked as a non-clickable header/footer item with a visual mega menu, and its sub-pages must be collection landing pages with full section definitions including trust certification and Bubbi Recommends."
+      ],
+      "content_rules": [
+        "All 'Our Story' and 'Why Bubbi' pages must include founder journey, mission, USPs, certifications, and featured boxes as per gold standard, with detailed sections including USP icons and brand highlights.",
+        "All 'How It Works' pages must include a step-by-step user journey with clear process explanation as per gold standard, including customer testimonials and CTA.",
+        "All age-based collection pages must include gender variants (Boy, Girl, Gender-Neutral), trust certification, 'View Eye' lightbox, and 'Bubbi Recommends' section as per gold standard.",
+        "All policy pages must include structured, clear content with defined sections as per gold standard.",
+        "All navigation items must have descriptive, user-intent-aligned descriptions in both header and footer placements as per gold standard.",
+        "Do not include any content or features not present in the gold standard, such as 'Product Quiz', 'Bubbi Box Builder', or 'Bubby Link'.",
+        "Ensure every age-group collection page includes the exact key features/sections: Hero, 'Inside Your Bubbi Box', Trust Certification, Gender Variants, Product Grid with View Eye, CTA, and Bubbi Recommends."
+      ]
+    }
+  }
+}
